@@ -1,35 +1,48 @@
 /* BASE ------------------------------------------- */
+/* line 19, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
+/* line 23, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 body {
   color: #343434;
   font-size: 1rem;
   line-height: 1.5;
   font-family: "Raleway", sans-serif;
   text-align: center;
-  margin: 0; }
+  margin: 0;
+}
 
+/* line 32, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 h1,
 h2 {
-  font-family: "Bree Serif", serif; }
+  font-family: "Bree Serif", serif;
+}
 
+/* line 37, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 ul {
   list-style-type: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
+/* line 43, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 p {
-  margin-bottom: 1.25em; }
+  margin-bottom: 1.25em;
+}
 
 /* HEADER & FOOTER -------------------------------- */
+/* line 49, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 header {
   height: 460px;
   background: linear-gradient(#009fe1, #3acec2), url("../img/bg.jpg") no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
-  position: relative; }
+  position: relative;
+}
 
+/* line 57, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 header::after {
   content: '';
   display: block;
@@ -38,26 +51,34 @@ header::after {
   position: absolute;
   transform: skewY(-2deg);
   background-color: #fff;
-  bottom: -25px; }
+  bottom: -25px;
+}
 
+/* line 68, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 header h1 {
   color: #fff;
   font-size: 4.8em;
   margin-bottom: 0;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+}
 
+/* line 75, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 header p {
   color: #eeea72;
   font-size: 1.25em;
-  margin: 0; }
+  margin: 0;
+}
 
+/* line 81, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 footer {
   padding: 2em 0 0;
   height: 100px;
   background-color: #eee;
   margin-top: 3.5em;
-  position: relative; }
+  position: relative;
+}
 
+/* line 89, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 footer::before {
   content: '';
   display: block;
@@ -66,40 +87,73 @@ footer::before {
   position: absolute;
   transform: skewY(-2deg);
   background-color: #eee;
-  top: -25px; }
+  top: -25px;
+}
 
 /* CONTAINERS ------------------------------------- */
+/* line 102, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 .inner {
-  padding: 0.5em 1em; }
+  padding: 0.5em 1em;
+}
 
+/* line 106, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 .intro {
   margin: auto;
-  padding: 1em 1em 3em; }
+  padding: 1em 1em 3em;
+}
 
 /* COMPONENTS ------------------------------------- */
+/* line 113, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 .main-nav {
-  margin-top: 1em; }
+  margin-top: 1em;
+}
 
+/* line 115, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
+.main-nav li {
+  display: inline-block;
+  margin: 0 0.65em;
+}
+
+/* line 119, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
+.main-nav a {
+  color: #fff;
+  font-size: 0.85em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 128, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 .img-featured {
   width: 165px;
   border: 4px solid #fff;
   border-radius: 50%;
   margin-top: 75px;
   position: relative;
-  z-index: 100; }
+  z-index: 100;
+}
 
+/* line 137, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 .card {
   display: flex;
   flex-direction: column;
   padding: 1.5em 1em;
   border: 1px solid #eee;
-  border-radius: 0.25em; }
+  border-radius: 0.25em;
+}
 
+/* line 143, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
+.card h1 {
+  margin: 0.35em 0 0;
+  line-height: 1.25;
+}
+
+/* line 147, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
+.card .icon,
 .card h1 {
   color: #278da4;
-  margin: 0.35em 0 0;
-  line-height: 1.25; }
+}
 
+/* line 155, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
 .btn-info {
   color: #fff;
   display: inline-block;
@@ -110,35 +164,55 @@ footer::before {
   padding: 0.75em 1.5em;
   border-radius: 0.35em;
   background-color: #278da4;
-  margin-top: auto; }
+  margin-top: auto;
+}
 
 /* MEDIA QUERIES ---------------------------------- */
 @media (max-width: 575px) {
+  /* line 172, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
   header {
-    height: 340px; }
-
+    height: 340px;
+  }
+  /* line 175, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
   header h1 {
-    font-size: 3.4em; }
-
+    font-size: 3.4em;
+  }
+  /* line 178, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
   .img-featured {
-    display: none; } }
+    display: none;
+  }
+}
+
 @media (min-width: 576px) {
+  /* line 184, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
   .main-content {
     display: flex;
-    flex-wrap: wrap; }
-
+    flex-wrap: wrap;
+  }
+  /* line 188, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
   .card {
-    flex: 1; } }
+    flex: 1;
+  }
+}
+
 @media (min-width: 768px) {
+  /* line 194, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
   .main-content {
     width: 90%;
     max-width: 1000px;
-    margin: 0 auto; } }
-@media (min-width: 992px) {
-  header {
-    background-position: 0 0, 0 45%; }
+    margin: 0 auto;
+  }
+}
 
+@media (min-width: 992px) {
+  /* line 202, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
+  header {
+    background-position: 0 0, 0 45%;
+  }
+  /* line 205, ../../../Users/Gerlin/Documents/Code/2/2/1-Nested-Selectors/start/scss/style.scss */
   .intro {
-    width: 45%; } }
+    width: 45%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
